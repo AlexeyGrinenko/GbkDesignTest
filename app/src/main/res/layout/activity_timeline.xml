@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:context=".SignActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_0dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/timeline_background">
+
+            <LinearLayout
+                android:id="@+id/timeline_linear_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimens_20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_clock"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimens_5dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="@dimen/text_13sp"
+                    android:text="4:21 PM"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/timeline_linear_time"
+                android:layout_below="@+id/timeline_toolbar"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimens_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_5dp"
+                            android:fontFamily="@font/montserrat_thin"
+                            android:text="22"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/text_32sp"
+                            />
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_5dp"
+                            android:text="February"
+                            android:textSize="@dimen/text_16sp"
+                            />
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_5dp"
+                            android:text="9 Events"
+                            android:textSize="@dimen/text_9sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimens_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_5dp"
+                            android:fontFamily="@font/montserrat_thin"
+                            android:text="23"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_45sp"
+                            />
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_5dp"
+                            android:text="February"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_23sp"
+                            />
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_5dp"
+                            android:text="15 Events"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_13sp"
+                            />
+
+                        <View
+                            android:layout_width="@dimen/dimens_20dp"
+                            android:layout_height="@dimen/dimens_2dp"
+                            android:layout_marginTop="@dimen/dimens_30dp"
+                            android:background="@color/colorRed"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimens_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_5dp"
+                            android:fontFamily="@font/montserrat_thin"
+                            android:text="24"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/text_32sp"
+                            />
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_5dp"
+                            android:text="February"
+                            android:textSize="@dimen/text_16sp"
+                            />
+
+                        <TextView
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_5dp"
+                            android:text="9 Events"
+                            android:textSize="@dimen/text_9sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/timeline_toolbar"
+                layout="@layout/toolbar_timeline"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_0dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/timeline_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/colorGrey"
+                android:dividerHeight="@dimen/dimens_1dp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

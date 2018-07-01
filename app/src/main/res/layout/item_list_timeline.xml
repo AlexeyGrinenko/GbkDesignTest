@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dimens_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/item_timeline_linear_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_timeline_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="4:45"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_20sp"
+                />
+
+            <TextView
+                android:id="@+id/item_timeline_tv_time_am"
+                style="@style/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_9sp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_timeline_linear_time"
+            android:layout_alignTop="@+id/item_timeline_linear_time"
+            android:layout_toLeftOf="@+id/item_timeline_linear_time">
+
+            <ImageView
+                android:id="@+id/item_timeline_iv_circle"
+                android:layout_width="@dimen/dimens_10dp"
+                android:layout_height="@dimen/dimens_10dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/bg_red_circle"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_marginBottom="@dimen/dimens_20dp"
+            android:layout_marginTop="@dimen/dimens_20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_timeline_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Finish Home Screen"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_14sp"
+                />
+
+            <TextView
+                android:id="@+id/item_timeline_tv_subtitle"
+                style="@style/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_5dp"
+                android:text="Home App"
+                android:textSize="@dimen/text_9sp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/item_timeline_iv_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timeline_photo1"/>
+
+                <ImageView
+                    android:id="@+id/item_timeline_iv_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timeline_photo2"/>
+
+                <ImageView
+                    android:id="@+id/item_timeline_iv_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timeline_photo1"/>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

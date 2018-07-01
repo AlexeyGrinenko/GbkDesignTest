@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:context=".SignActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_0dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/newsfeed_background">
+
+            <com.alexg.gbkdesigntest.Utils.SlidingSplashView
+                android:id="@+id/splash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:imageResources="@array/img_id_arr"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimens_30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimens_10dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Integer ut placerat purued non dignissim neque. "
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_20sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimens_10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimens_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_heart_red"/>
+
+                        <TextView
+                            android:id="@+id/item_newsfeed_likes"
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_5dp"
+                            android:text="15 Likes"
+                            android:textSize="@dimen/text_10sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimens_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_comments"/>
+
+                        <TextView
+                            android:id="@+id/item_newsfeed_comments"
+                            style="@style/textViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimens_5dp"
+                            android:text="85 Comments"
+                            android:textSize="@dimen/text_10sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_0dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/newsfeed_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRed"
+                app:tabGravity="fill"
+                app:tabMaxWidth="0dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@android:color/white"
+                app:tabTextAppearance="@style/tabTextStyle"
+                app:tabTextColor="@color/colorPink"
+                />
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:id="@+id/newsfeed_tabs_material"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/newsfeed_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/colorGrey"
+                android:dividerHeight="@dimen/dimens_1dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/newsfeed_toolbar"
+        layout="@layout/toolbar_newsfeed"/>
+</RelativeLayout>

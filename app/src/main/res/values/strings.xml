@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">GbkDesignTest</string>
+    <string name="text_activity_one">Activity Sign</string>
+    <string name="text_activity_two">Activity Newsfeed</string>
+    <string name="text_activity_three">Activity Profile</string>
+    <string name="text_activity_fore">Activity Timeline</string>
+
+    <string name="title_activity_sign">SignActivity</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="text_username">Username</string>
+    <string name="text_email_address">Email Address</string>
+    <string name="text_password">Password</string>
+    <string name="text_confirm_password">Confirm Password</string>
+    <string name="text_next">Next</string>
+    <string name="text_already_have_an_account">Already have an account?</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="text_newsfeed">Newsfeed</string>
+    <string name="text_profile">Profile</string>
+    <string name="text_timeline">Timeline</string>
+    <string name="text_followers">786 Followers</string>
+    <string name="text_facebook">Facebook</string>
+    <string name="text_twitter">Twitter</string>
+    <string name="text_google">Google+</string>
+    <string name="text_connect">Connect</string>
+    <string name="title_activity_timeline">TimelineActivity</string>
+    <string name="title_activity_newsfeed">NewsfeedActivity</string>
+
+    <string name="text_likes">Likes</string>
+    <string name="text_comments">Comments</string>
+
+
+    <integer-array name="img_id_arr">
+        <item>@drawable/newsfeed_background</item>
+        <item>@drawable/timeline_background</item>
+        <item>@drawable/profile_background</item>
+        <item>@drawable/newsfeed_background</item>
+    </integer-array>
+</resources>

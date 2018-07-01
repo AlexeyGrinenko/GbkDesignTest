@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:context=".SignActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_0dp"
+            android:layout_weight="0.4"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimens_30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/dimens_40dp"
+                android:layout_toLeftOf="@+id/profile_photo_view"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_facebook"/>
+
+                <TextView
+                    style="@style/textViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_5dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/text_followers"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dimens_40dp"
+                android:layout_toRightOf="@+id/profile_photo_view"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_twitter"/>
+
+                <TextView
+                    style="@style/textViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_5dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/text_followers"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/profile_photo_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/white"
+                android:padding="@dimen/dimens_5dp"
+                android:src="@drawable/profile_photo"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_0dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    style="@style/relativeLayoutProfileStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_username"
+                        />
+
+                    <EditText
+                        style="@style/editTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="sandeepkasundra"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_1dp"
+                    android:layout_marginTop="@dimen/dimens_20dp"
+                    android:background="@color/colorLightGrey"/>
+
+                <RelativeLayout
+                    style="@style/relativeLayoutProfileStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_email_address"
+                        />
+
+                    <EditText
+                        style="@style/editTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="sandeepkasundra@gmail.com"
+                        android:textColor="@android:color/black"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_1dp"
+                    android:layout_marginTop="@dimen/dimens_20dp"
+                    android:background="@color/colorLightGrey"/>
+
+                <RelativeLayout
+                    style="@style/relativeLayoutProfileStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_password"
+                        />
+
+                    <EditText
+                        style="@style/editTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:inputType="textPassword"
+                        android:text="sandeepkasundra@gmail.com"
+                        android:textColor="@android:color/black"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_1dp"
+                    android:layout_marginTop="@dimen/dimens_20dp"
+                    android:background="@color/colorLightGrey"/>
+
+                <RelativeLayout
+                    style="@style/relativeLayoutProfileStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_facebook"
+                        />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/profile_switch_facebook"
+                        style="@style/switchStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_switch_on"
+                        android:checked="true"
+                        android:padding="@dimen/dimens_2dp"
+                        android:splitTrack="true"
+                        android:text="@null"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_1dp"
+                    android:layout_marginTop="@dimen/dimens_20dp"
+                    android:background="@color/colorLightGrey"/>
+
+                <RelativeLayout
+                    style="@style/relativeLayoutProfileStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_twitter"
+                        />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/profile_switch_twitter"
+                        style="@style/switchStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_switch_off"
+                        android:checked="false"
+                        android:text="@null"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_1dp"
+                    android:layout_marginTop="@dimen/dimens_20dp"
+                    android:background="@color/colorLightGrey"/>
+
+                <RelativeLayout
+                    style="@style/relativeLayoutProfileStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_google"
+                        />
+
+                    <TextView
+                        style="@style/textViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_connect"
+                        android:textColor="@android:color/black"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/profile_toolbar"
+        layout="@layout/toolbar_profile"/>
+</RelativeLayout>
