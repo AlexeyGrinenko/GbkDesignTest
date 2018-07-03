@@ -119,11 +119,7 @@
                 app:tabTextAppearance="@style/tabTextStyle"
                 app:tabTextColor="@color/colorPink"
                 />
-            <com.google.android.material.tabs.TabLayout
-                android:layout_width="match_parent"
-                android:id="@+id/newsfeed_tabs_material"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top" />
+
             <android.support.v4.view.ViewPager
                 android:id="@+id/viewpager"
                 android:layout_width="match_parent"
